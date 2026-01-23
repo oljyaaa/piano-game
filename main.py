@@ -1,10 +1,12 @@
-from pygame import *
+from pygame import*
 from settings import *
 from sounds import load_sounds
 from keys import draw_keys, create_key_rects
 from buttons import Button
 from ui.settings_menu import SettingsMenu
-
+init()
+mixer.init()
+font.init()
 
 display.set_caption("Piano Game")
 
